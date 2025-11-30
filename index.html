@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SendStatus UX Kit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            colors: {
+              forest: {
+                DEFAULT: '#0f3825',
+                light: '#1a4d35',
+                dark: '#082015',
+              },
+              lime: {
+                DEFAULT: '#bce455',
+                hover: '#a8d13b',
+                light: '#dcf598',
+              },
+              cream: {
+                DEFAULT: '#f2f4ef',
+                dark: '#e5e7e1',
+              },
+              status: {
+                blue: '#3b82f6',
+                orange: '#f97316',
+                red: '#ef4444',
+                green: '#22c55e',
+                pink: '#ec4899',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "clsx": "https://esm.sh/clsx@2.1.0",
+    "tailwind-merge": "https://esm.sh/tailwind-merge@2.2.1",
+    "class-variance-authority": "https://esm.sh/class-variance-authority@0.7.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-cream text-forest font-sans antialiased selection:bg-lime selection:text-forest">
+    <div id="root"></div>
+  </body>
+</html>
